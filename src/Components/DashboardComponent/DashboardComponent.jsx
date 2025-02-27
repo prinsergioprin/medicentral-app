@@ -1,15 +1,15 @@
 import React from "react";
-import { NavLink} from "react-router-dom";
+import { NavLink} from "react-router";
 import crossIcon from "../../assets/cross-icon.svg";
 import "./DashboardComponent.css";
 
 const ListItem = ({ text, path }) => {
   return (
     <li className="dashboard-list-item">
-        <NavLink to={path}>
+        {/* <NavLink to={path}> */}
       <img src={crossIcon} alt="Cross icon" />
       <span className="text">{text}</span>
-      </NavLink>
+      {/* </NavLink> */}
     </li>
   );
 }

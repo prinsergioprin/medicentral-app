@@ -1,6 +1,7 @@
 @import "../../App.css";
 
 .dashboard {
+  min-width: 14.2rem;
   max-width: 22%;
   height: 100vh;
   padding: 2rem;

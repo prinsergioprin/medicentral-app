@@ -1,5 +1,6 @@
 import './App.css';
 import DashboardComponent from './Components/DashboardComponent/DashboardComponent';
+import HomePageComponent from './Components/HomePageComponent/HomePageComponent';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       {/* <Header /> */}
       <div className="main-content">
         <DashboardComponent />
-        {/* <Homepage /> */}
+        <HomePageComponent />
       </div>
       {/* <Footer /> */}
     </div>

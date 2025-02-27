@@ -1,0 +1,38 @@
+@import "../../App.css";
+
+.homepage-card {
+    background-color: var(--secondary-light);
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    .title-row {
+        display: flex;
+        align-items: top;
+        justify-content: space-between;
+        background-color: var(--secondary-color);
+        padding: 2rem;
+        border-radius: 20px 20px 0 0;
+        h3 {
+            font-size: var(--font-size-medium);
+        }
+        img {
+            height: 4.75rem;
+            width: auto;
+        }
+    }
+    .details-row {
+        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .line1, .line2 {
+            display: flex;
+            span {
+                margin-right: 1rem;
+            }
+            p {
+
+            }
+        }
+
+    }
+}
