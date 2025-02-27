@@ -13,6 +13,7 @@
         border-radius: 20px 20px 0 0;
         h3 {
             font-size: var(--font-size-medium);
+            font-weight: 600;
         }
         img {
             height: 4.75rem;
@@ -20,6 +21,7 @@
         }
     }
     .details-row {
+        font-size: var(--font-size-small);
         padding: 1.5rem 2rem;
         display: flex;
         flex-direction: column;

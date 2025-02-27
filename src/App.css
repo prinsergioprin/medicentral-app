@@ -28,5 +28,10 @@ body {
 }
 
 .main-content {
+  width: 100vw;
   display: flex;
+}
+
+.right-side {
+  padding: 2rem;
 }

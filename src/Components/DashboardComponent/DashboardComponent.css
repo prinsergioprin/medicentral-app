@@ -1,14 +1,15 @@
 @import "../../App.css";
 
 .dashboard {
-  min-width: 14.2rem;
-  max-width: 22%;
+  width: 28%;
+  min-width: 16rem;
   height: 100vh;
   padding: 2rem;
   background-color: var(--base-shadow);
   h3 {
     font-size: var(--font-size-medium);
     margin-bottom: 1rem;
+    font-weight: 600;
   }
 
   hr {

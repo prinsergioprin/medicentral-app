@@ -11,7 +11,6 @@ const HomeCardComponent = ({ title, icon, tag, paragraph1, paragraph2 }) => {
         <h3>{title}</h3>
         <img src={icon} alt="Cross icon" />
       </div>
-
       <div className="details-row">
         <div className="line1">
           {tag !== 0 && <span className="tag">{tag}</span>}
