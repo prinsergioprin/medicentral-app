@@ -1,7 +1,33 @@
 @import "../../App.css";
 
 .dashboard {
-    h3 {
-        font-size: var(--font-size-medium);
+  max-width: 22%;
+  height: 100vh;
+  padding: 2rem;
+  background-color: var(--base-shadow);
+  h3 {
+    font-size: var(--font-size-medium);
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    height: 2px;
+    background-color: var(--accent-color);
+    border: none;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    font-size: var(--font-size-small);
+    font-weight: 300;
+    .dashboard-list-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
     }
+  }
 }
