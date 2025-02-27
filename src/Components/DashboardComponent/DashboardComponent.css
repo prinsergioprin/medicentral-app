@@ -1,0 +1,7 @@
+@import "../../App.css";
+
+.dashboard {
+    h3 {
+        font-size: var(--font-size-medium);
+    }
+}
