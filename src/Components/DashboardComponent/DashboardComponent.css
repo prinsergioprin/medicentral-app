@@ -11,10 +11,23 @@
   left: 0;
   transform: translateX(0);
   transition: transform 0.3s ease;
-  h3 {
-    font-size: var(--font-size-medium);
-    margin-bottom: 1rem;
-    font-weight: 600;
+  .dashboard-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-size: var(--font-size-medium);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    /* FIX ALIGNMENT! */
+    button {
+      display: none;
+      /* font-size: 3rem;
+      border: none;
+      background-color: transparent;
+      text-align: center; */
+    }
   }
 
   hr {

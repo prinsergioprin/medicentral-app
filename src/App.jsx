@@ -11,12 +11,16 @@ function App() {
   // const toggleDashboard = () => {
   //   setIsDashboardOpen(!isDashboardOpen);
   // };
-  
+
   return (
     <div className="App">
       {/* <Header /> */}
+      {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
+       onToggleDashboard={toggleDashboard} */}
       <div className="main-content">
-        <DashboardComponent />
+        <DashboardComponent
+        // isOpen={isDashboardOpen} onClose={toggleDashboard}
+         />
         <div className="right-side">
         <MainHeadingComponent mainHeading="Hello, Doc" secondaryHeading="What are you looking for today?"/>
         <HomePageComponent />
