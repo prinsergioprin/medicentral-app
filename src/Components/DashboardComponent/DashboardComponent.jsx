@@ -15,8 +15,12 @@ const ListItem = ({ text, path }) => {
 }
 
 // ADD PATHS TO LIST ITEMS BELOW!
-const DashboardComponent = () => {
+const DashboardComponent = (
+  // check state to display
+  // {isOpen}
+) => {
   return (
+    // <div className={`dashboard ${isOpen ? 'open' : ''}`}>
     <aside className="dashboard">
       <h3>Dashboard</h3>
       <hr />
@@ -28,6 +32,7 @@ const DashboardComponent = () => {
         <ListItem text="Activity log"/>
       </ul>
     </aside>
+    // </div>
   );
 };
 

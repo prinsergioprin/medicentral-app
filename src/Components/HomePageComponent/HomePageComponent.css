@@ -6,3 +6,15 @@
     grid-auto-rows: max-content;
     gap: 2rem;
 }
+
+@media (max-width: 834px) {
+    .homepage-container {
+        gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .homepage-container {
+        grid-template-columns: 1fr;
+    }
+  }

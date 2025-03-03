@@ -5,6 +5,7 @@ import patientIcon from "../../assets/patient-icon.png";
 import scheduleIcon from "../../assets/schedule-icon.png";
 import inboxIcon from "../../assets/inbox-icon.png";
 import activityIcon from "../../assets/activity-icon.png";
+const dotIcon = String.fromCodePoint(0x2022);
 
 // EVERY CARD IS A LINK TOO, ADD PATHS!
 const HomePageComponent = () => {
@@ -28,7 +29,7 @@ faulty equipment"
       <HomeCardComponent
         title="Inbox"
         icon={inboxIcon}
-        tag="+"
+        tag={<span className="dot-icon">{dotIcon}</span>}
         paragraph1="Dr. Ali Wong. 
         Referral received 19/02"
         paragraph2="Dr. Cynthia Erivo.
@@ -37,7 +38,7 @@ faulty equipment"
       <HomeCardComponent
         title="Activity log"
         icon={activityIcon}
-        tag="+"
+        tag={<span className="dot-icon">{dotIcon}</span>}
         paragraph1="Administered flu vaccine"
         paragraph2="Reviewed medical history and symptoms"
       />

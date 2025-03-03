@@ -1,14 +1,37 @@
 @import "../../App.css";
 
 .main-heading {
+  h2 {
+    margin-top: 2rem;
+    font-size: var(--font-size-large);
+    font-weight: 600;
+  }
+  h3 {
+    font-size: var(--font-size-medium);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 834px) {
+  .main-heading {
     h2 {
-        margin-top: 2rem;
-        font-size: var(--font-size-large);
-        font-weight: 600;
+      font-size: var(--font-size-large-tablet);
     }
     h3 {
-        font-size: var(--font-size-medium);
-        margin-bottom: 1.5rem;
-        font-weight: 600;
+      font-size: var(--font-size-medium-tablet);
     }
+  }
+}
+
+@media (max-width: 425px) {
+  .main-heading {
+    h2 {
+      margin-top: 1.5rem;
+      font-size: var(--font-size-large-mobile);
+    }
+    h3 {
+      font-size: var(--font-size-medium-mobile);
+    }
+  }
 }

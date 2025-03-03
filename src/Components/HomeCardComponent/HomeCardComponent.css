@@ -1,40 +1,62 @@
 @import "../../App.css";
 
 .homepage-card {
-    background-color: var(--secondary-light);
-    border: 2px solid var(--text-color);
-    border-radius: 20px;
-    .title-row {
-        display: flex;
-        align-items: top;
-        justify-content: space-between;
-        background-color: var(--secondary-color);
-        padding: 2rem;
-        border-radius: 20px 20px 0 0;
-        h3 {
-            font-size: var(--font-size-medium);
-            font-weight: 600;
-        }
-        img {
-            height: 4.75rem;
-            width: auto;
-        }
+  background-color: var(--secondary-light);
+  border: 2px solid var(--text-color);
+  border-radius: 20px;
+  .title-row {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 20px 20px 0 0;
+    h3 {
+      font-size: var(--font-size-medium);
+      font-weight: 600;
     }
-    .details-row {
-        font-size: var(--font-size-small);
-        padding: 1.5rem 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        .line1, .line2 {
-            display: flex;
-            span {
-                margin-right: 1rem;
-            }
-            p {
-
-            }
-        }
-
+    img {
+      height: 4.75rem;
+      width: auto;
     }
+  }
+  .details-row {
+    font-size: var(--font-size-small);
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .line1,
+    .line2 {
+      display: flex;
+      align-items: center;
+      max-width: 25ch;
+      span {
+        margin-right: 1rem;
+        display: inline-flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.dot-icon {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 0.8;
+    color: var(--accent-color);
+  }
+
+  @media (max-width: 834px) {
+    .homepage-card .title-row img {
+      height: 3.25rem;
+    }
+    .homepage-card {
+      .title-row, .details-row {
+        padding: 1.5rem;
+      }
+    }
+  }
+  
+  @media (max-width: 425px) {
 }

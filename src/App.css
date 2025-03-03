@@ -15,10 +15,16 @@
   --background-color: #FFFFFF;
 
   --font-size-large: 5.25rem;
-  --font-size-medium: 2rem;
-  --font-size-small: 1.25rem;
-  --font-size-x-small: 1rem;
+  --font-size-large-tablet: 4.75rem;
+  --font-size-large-mobile: 3.5rem;
 
+  --font-size-medium: 2rem;
+  --font-size-medium-tablet: 1.75rem;
+  --font-size-medium-mobile: 1.5rem;
+
+  --font-size-small: 1.25rem;
+
+  --font-size-x-small: 1rem;
 }
 
 body {
@@ -27,11 +33,32 @@ body {
   font-style: normal;
 }
 
+.App {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
 .main-content {
-  width: 100vw;
   display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
 }
 
 .right-side {
+  flex-grow: 1;
   padding: 2rem;
+  margin-left: 28%;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 834px) {
+  .main-content {
+    margin-left: 0;
+  }
+  .right-side {
+    margin-left: 0;
+  }
 }

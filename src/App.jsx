@@ -4,6 +4,14 @@ import HomePageComponent from './Components/HomePageComponent/HomePageComponent'
 import MainHeadingComponent from './Components/MainHeadingComponent/MainHeadingComponent'
 
 function App() {
+
+  // useState to toggle dashboard using burger icon
+  // const [isDashboardOpen, setIsDashboardOpen] = useState(false);
+
+  // const toggleDashboard = () => {
+  //   setIsDashboardOpen(!isDashboardOpen);
+  // };
+  
   return (
     <div className="App">
       {/* <Header /> */}
