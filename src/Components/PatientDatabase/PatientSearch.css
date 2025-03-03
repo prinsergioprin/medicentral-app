@@ -1,0 +1,82 @@
+#patientsearch-container {
+  padding-left: 20.25rem;
+  padding-top: 6.5rem;
+}
+
+#patientdatabase-header {
+  font-size: 84px;
+  padding-top: 2.5rem;
+  padding-bottom: 4.8rem;
+}
+
+#patientsearch-heading {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+#patientsearch-input-value {
+  display: grid;
+  grid-template-rows: auto;
+  width: 20rem;
+  height: 3.4rem;
+  border: none;
+  border-radius: 0.6rem;
+  background: #f5f5eb;
+}
+
+#patientsearch-output-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#patientsearch-output-container-left {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 1rem;
+}
+
+#patientsearch-output-title {
+  font-size: 16px;
+}
+
+#patientsearch-output-name {
+  width: 20rem;
+  height: 3.4rem;
+  border: none;
+  border-radius: 0.6rem;
+  background: #f1fbea;
+}
+
+#patientsearch-output-container-right {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 1rem;
+}
+
+#patientsearch-output-nr {
+  width: 20rem;
+  height: 3.4rem;
+  border: none;
+  border-radius: 0.6rem;
+  background: #f1fbea;
+}
+
+#view-patient-buttons-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 1rem;
+}
+
+#view-patient-button {
+  width: 9.3rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.6rem;
+  background: #106a51;
+  color: white;
+  font-weight: bold;
+}
