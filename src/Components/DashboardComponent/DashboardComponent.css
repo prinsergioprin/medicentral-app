@@ -1,0 +1,98 @@
+@import "../../App.css";
+
+.dashboard {
+  width: 26%;
+  min-width: 16rem;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--base-shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  .dashboard-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-size: var(--font-size-medium);
+      margin-bottom: 1rem;
+      font-weight: var(--font-weight-semi-bold);
+    }
+    /* FIX ALIGNMENT! */
+    .dashboard-close-btn {
+      display: none;
+      font-size: 3rem;
+      border: none;
+      background-color: transparent;
+      text-align: center;
+    }
+  }
+
+  hr {
+    height: 2px;
+    background-color: var(--accent-color);
+    border: none;
+  }
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 100%;
+    ul {
+      font-family: "Raleway", sans-serif;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5rem;
+      gap: 1.5rem;
+      font-size: var(--font-size-small);
+      font-weight: var(--font-weight-regular);
+      .dashboard-list-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+    .log-out-btn {
+      display: none;
+      font-family: "Raleway", sans-serif;
+      font-size: var(--font-size-small);
+      border-radius: 0.625rem;
+      border: none;
+      background-color: var(--accent-color);
+      color: var(--background-color);
+      padding: 0.6rem 1.6rem;
+      font-weight: var(--font-weight-button);
+      margin-top: auto;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.dashboard.open {
+  transform: translateX(0);
+}
+
+@media (max-width: 834px) {
+  .dashboard {
+    transform: translateX(-100%);
+    .dashboard-top {
+      .dashboard-close-btn {
+        display: inline-block;
+      }
+    }
+    .dashboard-content {
+      .log-out-btn {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+}
