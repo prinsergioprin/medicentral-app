@@ -7,7 +7,7 @@
   padding: 2rem;
   background-color: var(--base-shadow);
   position: fixed;
-  top: 0;
+  top: 5.8rem;
   left: 0;
   display: flex;
   flex-direction: column;
