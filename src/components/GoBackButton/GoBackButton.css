@@ -1,0 +1,19 @@
+.go-back-button {
+  font-size: 1rem;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-arrow {
+  margin-right: 0.69rem;
+}
+
+@media (max-width: 425px) {
+  .go-back-button {
+    display: none;
+  }
+}
