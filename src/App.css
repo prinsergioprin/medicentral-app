@@ -23,8 +23,10 @@
   --font-size-medium-mobile: 1.5rem;
 
   --font-size-small: 1.25rem;
+  --font-size-small-mobile: 1rem;
 
   --font-size-x-small: 1rem;
+  --font-size-x-small-mobile: 0.8rem;
 }
 
 body {
