@@ -14,6 +14,9 @@ import Footer from "./Components/Footer/Footer";
 import PastActivitiesBox from "./Components/PastActivitiesBox/PastActivitiesBox";
 import GoBackButton from "./Components/GoBackButton/GoBackButton";
 import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
+import PatientSearch from "./Components/PatientSearch/PatientSearch";
+import PatientHeader from "./Components/PatientHeader/PatientHeader";
+import PatientWidgets from "./Components/PatientWidgets/PatientWidgets";
 
 function App() {
   useEffect(() => {
@@ -61,6 +64,9 @@ function App() {
           <GoBackButton />
           <PastActivitiesBox />
           <HowToLogIn />
+          {/* <PatientSearch /> */}
+          {/* <PatientHeader /> */}
+          {/* <PatientWidgets /> */}
 
           {/* ROUTE PATIENT DATABASE */}
         </div>
