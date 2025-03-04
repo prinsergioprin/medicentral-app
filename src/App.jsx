@@ -22,7 +22,7 @@ function App() {
   // };
 
   return (
-    <Router>
+    // <Router>
       <div className="App">
         {/* <Header /> */}
         {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
@@ -58,7 +58,7 @@ function App() {
 
         {/* <Footer /> */}
       </div>
-    </Router>
+    //{/* </Router> */}
   );
 }
 
