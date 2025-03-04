@@ -1,0 +1,70 @@
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .login-container {
+    max-width: 800px;
+    padding: 2rem;
+  }
+  
+  .login-container h1 {
+    font-size: var(--font-size-large);
+    margin-bottom: 1rem;
+  }
+  
+  .login-container p {
+    font-size: var(--font-size-medium);
+    margin-bottom: 2rem;
+  }
+  
+  .choose-user {
+    font-size: var(--font-size-small);
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  
+  .medical-staff-button,
+  .patient-button {
+    font-size: var(--font-size-small);
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .medical-staff-button {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  .patient-button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+  
+  .medicentral-logo {
+    width: 200px; /* to be adjusted */
+    margin: 2rem auto;
+    display: block;
+  }
+  
+  .contact-text {
+    font-size: var(--font-size-x-small);
+    text-align: center;
+  }
+  
+  .arrow {
+    font-size: var(--font-size-small);
+  }
+  

@@ -1,0 +1,8 @@
+.footer {
+    background-color: var(--secondary-light);
+    padding: 2rem;
+    text-align: left;
+    font-size: var(--font-size-x-small);
+    color: var(--text-color);
+    max-width: 90rem;
+  }
