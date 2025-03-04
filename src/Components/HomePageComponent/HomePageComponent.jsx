@@ -28,6 +28,7 @@ faulty equipment"
       />
       <HomeCardComponent
         title="Inbox"
+        count={<span className="count-icon">2</span>}
         icon={inboxIcon}
         tag={<span className="dot-icon">{dotIcon}</span>}
         paragraph1="Dr. Ali Wong. 

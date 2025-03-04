@@ -3,12 +3,12 @@ import "../HomeCardComponent/HomeCardComponent.css";
 // import { NavLink } from "react-router";
 
 // EVERY CARD IS A LINK TOO, ADD PATHS!
-const HomeCardComponent = ({ title, icon, tag, paragraph1, paragraph2 }) => {
+const HomeCardComponent = ({ title, count, icon, tag, paragraph1, paragraph2 }) => {
   return (
     // <NavLink to={path}>
     <div className="homepage-card">
       <div className="title-row">
-        <h3>{title}</h3>
+        <h3>{title}{count}</h3>
         <img src={icon} alt="Cross icon" />
       </div>
       <div className="details-row">
