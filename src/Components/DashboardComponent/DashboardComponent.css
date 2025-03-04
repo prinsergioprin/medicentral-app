@@ -3,12 +3,14 @@
 .dashboard {
   width: 28%;
   min-width: 16rem;
-  height: 100vh;
+  height: 100%;
   padding: 2rem;
   background-color: var(--base-shadow);
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
   transform: translateX(0);
   transition: transform 0.3s ease;
   .dashboard-top {
@@ -21,12 +23,12 @@
       font-weight: 600;
     }
     /* FIX ALIGNMENT! */
-    button {
+    .dashboard-close-btn {
       display: none;
-      /* font-size: 3rem;
+      font-size: 3rem;
       border: none;
       background-color: transparent;
-      text-align: center; */
+      text-align: center;
     }
   }
 
@@ -35,19 +37,39 @@
     background-color: var(--accent-color);
     border: none;
   }
-
-  ul {
-    list-style: none;
+  .dashboard-content {
     display: flex;
     flex-direction: column;
-    margin-top: 1.5rem;
-    gap: 1.5rem;
-    font-size: var(--font-size-small);
-    font-weight: 300;
-    .dashboard-list-item {
+    align-items: start;
+    justify-content: space-between;
+    height: 100%;
+    ul {
+      font-family: "Raleway", sans-serif;
+      list-style: none;
       display: flex;
-      align-items: center;
-      gap: 1rem;
+      flex-direction: column;
+      margin-top: 1.5rem;
+      gap: 1.5rem;
+      font-size: var(--font-size-small);
+      font-weight: 300;
+      .dashboard-list-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+    .log-out-btn {
+      display: none;
+      font-family: "Raleway", sans-serif;
+      font-size: var(--font-size-small);
+      border-radius: 0.625rem;
+      border: none;
+      background-color: var(--accent-color);
+      color: var(--background-color);
+      padding: 0.6rem 1.6rem;
+      font-weight: 500;
+      margin-top: auto;
+      margin-bottom: 3rem;
     }
   }
 }
@@ -59,10 +81,18 @@
 @media (max-width: 834px) {
   .dashboard {
     transform: translateX(-100%);
-}
+    .dashboard-top {
+      .dashboard-close-btn {
+        display: inline-block;
+      }
+    }
+    .dashboard-content {
+      .log-out-btn {
+        display: inline-block;
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
-
 }
-

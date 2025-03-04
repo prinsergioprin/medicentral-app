@@ -1,10 +1,10 @@
 import React from "react";
 import "../HomePageComponent/HomePageComponent.css";
 import HomeCardComponent from "../HomeCardComponent/HomeCardComponent";
-import patientIcon from "../../assets/patient-icon.png";
-import scheduleIcon from "../../assets/schedule-icon.png";
-import inboxIcon from "../../assets/inbox-icon.png";
-import activityIcon from "../../assets/activity-icon.png";
+import patientIcon from "../../Assets/patient-icon.png";
+import scheduleIcon from "../../Assets/schedule-icon.png";
+import inboxIcon from "../../Assets/inbox-icon.png";
+import activityIcon from "../../Assets/activity-icon.png";
 const dotIcon = String.fromCodePoint(0x2022);
 
 // EVERY CARD IS A LINK TOO, ADD PATHS!
