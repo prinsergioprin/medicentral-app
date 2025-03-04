@@ -1,11 +1,10 @@
 import React from "react";
 import "./PatientWidgets.css";
 
+// function PatientWidgets() {
+//     return (
 
-function PatientWidgets() {
-    return (
+//     );
+// }
 
-    )
-}
-
-export default PatientWidgets;
+// export default PatientWidgets;

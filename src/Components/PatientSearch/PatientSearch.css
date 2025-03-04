@@ -1,6 +1,4 @@
 .patientsearch-container {
-  display: flex;
-  flex-direction: row;
   padding-left: 20.25rem;
   padding-right: 16rem;
   padding-top: 6.5rem;
@@ -138,7 +136,26 @@
 
 @media (max-width: 425px) {
   #patientsearch-container {
-    padding-left: 20.25rem;
-    padding-top: 6.5rem;
+    padding-left: 2.25rem;
+    padding-right: 1.6rem;
+    padding-top: 2rem;
+  }
+
+  .patientsearch-output-name {
+    width: 10.6rem;
+    height: 3.4rem;
+    border: none;
+    border-radius: 0.6rem;
+    background: #f1fbea;
+  }
+
+  .patientsearch-output-nr {
+    width: 10.6rem;
+    height: 3.4rem;
+    border: none;
+    border-radius: 0.6rem;
+    background: #f1fbea;
+    font-family: "Outfit", serif;
+    color: black;
   }
 }

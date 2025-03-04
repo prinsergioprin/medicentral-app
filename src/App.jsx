@@ -6,9 +6,9 @@ import PatientWidgets from "./Components/PatientWidgets/PatientWidgets";
 function App() {
   return (
     <div className="App">
-      {/* <PatientSearch /> */}
+      <PatientSearch />
       {/* <PatientHeader /> */}
-      <PatientWidgets />
+      {/* <PatientWidgets /> */}
     </div>
   );
 }
