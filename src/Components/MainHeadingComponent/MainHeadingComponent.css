@@ -4,12 +4,12 @@
   h2 {
     margin-top: 2rem;
     font-size: var(--font-size-large);
-    font-weight: 600;
+    font-weight: var(--font-weight-semi-bold);
   }
   h3 {
     font-size: var(--font-size-medium);
     margin-bottom: 1.5rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-semi-bold);
   }
 }
 

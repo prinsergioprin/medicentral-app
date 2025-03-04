@@ -1,7 +1,7 @@
 @import "../../App.css";
 
 .dashboard {
-  width: 28%;
+  width: 26%;
   min-width: 16rem;
   height: 100%;
   padding: 2rem;
@@ -20,7 +20,7 @@
     h3 {
       font-size: var(--font-size-medium);
       margin-bottom: 1rem;
-      font-weight: 600;
+      font-weight: var(--font-weight-semi-bold);
     }
     /* FIX ALIGNMENT! */
     .dashboard-close-btn {
@@ -51,7 +51,7 @@
       margin-top: 1.5rem;
       gap: 1.5rem;
       font-size: var(--font-size-small);
-      font-weight: 300;
+      font-weight: var(--font-weight-regular);
       .dashboard-list-item {
         display: flex;
         align-items: center;
@@ -67,7 +67,7 @@
       background-color: var(--accent-color);
       color: var(--background-color);
       padding: 0.6rem 1.6rem;
-      font-weight: 500;
+      font-weight: var(--font-weight-button);
       margin-top: auto;
       margin-bottom: 3rem;
     }
