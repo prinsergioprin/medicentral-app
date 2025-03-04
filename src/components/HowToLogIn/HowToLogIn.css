@@ -1,0 +1,26 @@
+.how-to-login {
+  max-width: 300px;
+}
+
+.login-heading {
+  font-size: 2rem;
+}
+
+.login-text {
+  font-size: 1rem;
+}
+
+@media (max-width: 834px) {
+  .login-heading {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .login-heading {
+    font-size: 1.5rem;
+  }
+  .login-text {
+    font-size: 0.75rem;
+  }
+}
