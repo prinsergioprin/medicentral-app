@@ -1,16 +1,15 @@
-import './App.css';
+import "./App.css";
 import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   // Routes,
   // Route
 } from "react-router";
-import DashboardComponent from './Components/DashboardComponent/DashboardComponent';
-import HomePageComponent from './Components/HomePageComponent/HomePageComponent';
-import MainHeadingComponent from './Components/MainHeadingComponent/MainHeadingComponent'
+import DashboardComponent from "./Components/DashboardComponent/DashboardComponent";
+import HomePageComponent from "./Components/HomePageComponent/HomePageComponent";
+import MainHeadingComponent from "./Components/MainHeadingComponent/MainHeadingComponent";
 
 function App() {
-
   useEffect(() => {
     document.title = "Medicentral";
   }, []);
@@ -24,35 +23,41 @@ function App() {
 
   return (
     <Router>
-    <div className="App">
-      {/* <Header /> */}
-      {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
+      <div className="App">
+        {/* <Header /> */}
+        {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
        onToggleDashboard={toggleDashboard} */}
-      <div className="main-content">
-      {/* <Routes> */}
+        <div className="main-content">
+          {/* ROUTE LANDING PAGE */}
+          {/* ROUTE METHOD PAGE */}
+          {/* ROUTE LOGIN PAGE */}
 
-        {/* ROUTE LANDING PAGE */}
-        {/* ROUTE METHOD PAGE */}
-        {/* ROUTE LOGIN PAGE */}
+          {/* ROUTE HOMEPAGE */}
 
-        {/* ROUTE HOMEPAGE */}
-        
-        <DashboardComponent
-        // isOpen={isDashboardOpen} onClose={toggleDashboard}
-         />
-        <div className="right-side">
-        <MainHeadingComponent mainHeading="Hello, Doc" secondaryHeading="What are you looking for today?"/>
-        <HomePageComponent />
+          <DashboardComponent
+          // isOpen={isDashboardOpen} onClose={toggleDashboard}
+          />
+          <div className="right-side">
+            <MainHeadingComponent
+              mainHeading="Hello, Doc"
+              secondaryHeading="What are you looking for today?"
+            />
+            {/* change content on different routes */}
 
-        {/* ROUTE PATIENT DATABASE */}
+            {/* <Switch>
+              <Route exact path="/" component={HomePageComponent} />
+              <Route path="/patient" component={PatientDatabaseComponent} />
+              {/* Add more routes */}
+            {/* </Switch> */} 
 
+            <HomePageComponent />
 
+            {/* ROUTE PATIENT DATABASE */}
+          </div>
         </div>
-        {/* </Routes> */}
+
+        {/* <Footer /> */}
       </div>
-    
-      {/* <Footer /> */}
-    </div>
     </Router>
   );
 }
