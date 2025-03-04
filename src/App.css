@@ -40,26 +40,30 @@ body {
   font-family: "Outfit", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  height: 100%;
+  margin: 0;
 }
 
 .App {
   position: relative;
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content {
   display: flex;
+  flex: 1 0 auto;
   width: 100%;
   min-height: 100vh;
-  flex-grow: 1;
   transition: 0.3s ease;
 }
 
 .right-side {
   flex-grow: 1;
   padding: 2rem;
-  margin-left: 26%;
+  width: calc(100% - 26%);
   transition: 0.3s ease;
 }
 
@@ -68,6 +72,7 @@ body {
     margin-left: 0;
   }
   .right-side {
+    width: 100%;
     margin-left: 0;
   }
 }

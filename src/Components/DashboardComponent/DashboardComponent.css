@@ -3,11 +3,9 @@
 .dashboard {
   width: 26%;
   min-width: 16rem;
-  height: 100%;
+  min-height: 100%;
   padding: 2rem;
   background-color: var(--base-shadow);
-  position: fixed;
-  top: 5.8rem;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -75,12 +73,14 @@
 }
 
 .dashboard.open {
-  transform: translateX(0);
+  left: 0;
 }
 
 @media (max-width: 834px) {
   .dashboard {
-    transform: translateX(-100%);
+    position: fixed;
+    left: -100%;
+    z-index: 1;
     .dashboard-top {
       .dashboard-close-btn {
         display: inline-block;
