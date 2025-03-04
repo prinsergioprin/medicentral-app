@@ -64,8 +64,8 @@ function App() {
           <GoBackButton />
           <PastActivitiesBox />
           <HowToLogIn />
-          {/* <PatientSearch /> */}
-          {/* <PatientHeader /> */}
+          <PatientSearch />
+          <PatientHeader />
           {/* <PatientWidgets /> */}
 
           {/* ROUTE PATIENT DATABASE */}
