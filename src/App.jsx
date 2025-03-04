@@ -8,9 +8,9 @@ import {
 import DashboardComponent from "./Components/DashboardComponent/DashboardComponent";
 import HomePageComponent from "./Components/HomePageComponent/HomePageComponent";
 import MainHeadingComponent from "./Components/MainHeadingComponent/MainHeadingComponent";
-import Navbar from './Components/Navbar/Navbar';
-import LogInSection from './Components/LogInSection/LogInSection';
-import Footer from './Components/Footer/Footer';
+import Navbar from "./Components/Navbar/Navbar";
+import LogInSection from "./Components/LogInSection/LogInSection";
+import Footer from "./Components/Footer/Footer";
 import PastActivitiesBox from "./Components/PastActivitiesBox/PastActivitiesBox";
 import GoBackButton from "./Components/GoBackButton/GoBackButton";
 import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
@@ -29,45 +29,45 @@ function App() {
 
   return (
     // <Router>
-      <div className="App">
-        < Navbar/>
-        {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
+    <div className="App">
+      <Navbar />
+      {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
        onToggleDashboard={toggleDashboard} */}
-        <div className="main-content">
-          {/* ROUTE LANDING PAGE */}
-          {/* ROUTE METHOD PAGE */}
-          {/* ROUTE LOGIN PAGE */}
+      <div className="main-content">
+        {/* ROUTE LANDING PAGE */}
+        {/* ROUTE METHOD PAGE */}
+        {/* ROUTE LOGIN PAGE */}
 
-          {/* ROUTE HOMEPAGE */}
+        {/* ROUTE HOMEPAGE */}
 
-          <DashboardComponent
-          // isOpen={isDashboardOpen} onClose={toggleDashboard}
+        <DashboardComponent
+        // isOpen={isDashboardOpen} onClose={toggleDashboard}
+        />
+        <div className="right-side">
+          <MainHeadingComponent
+            mainHeading="Hello, Doc"
+            secondaryHeading="What are you looking for today?"
           />
-          <div className="right-side">
-            <MainHeadingComponent
-              mainHeading="Hello, Doc"
-              secondaryHeading="What are you looking for today?"
-            />
-            {/* change content on different routes */}
+          {/* change content on different routes */}
 
-            {/* <Switch>
+          {/* <Switch>
               <Route exact path="/" component={HomePageComponent} />
               <Route path="/patient" component={PatientDatabaseComponent} />
               {/* Add more routes */}
-            {/* </Switch> */} 
+          {/* </Switch> */}
 
-            <HomePageComponent />
-              <LogInSection />
-
-            {/* ROUTE PATIENT DATABASE */}
-          </div>
+          <HomePageComponent />
+          <LogInSection />
           <GoBackButton />
-      <PastActivitiesBox />
-      <HowToLogIn />
-        </div>
+          <PastActivitiesBox />
+          <HowToLogIn />
 
-        <Footer />
+          {/* ROUTE PATIENT DATABASE */}
+        </div>
       </div>
+
+      <Footer />
+    </div>
     //{/* </Router> */}
   );
 }
