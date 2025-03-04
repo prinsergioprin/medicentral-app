@@ -1,18 +1,22 @@
 .content-box-container {
-  max-width: 1150px;
+  max-width: 71.88rem;
   border: 2px solid #000;
   border-radius: 1.25rem;
-  padding: 1.25rem;
   margin-bottom: 1.25rem;
   background-color: #f1fbea;
 }
 
 .content-box-container h2 {
-  color: #333;
+  color: #000;
   margin-top: 0;
   margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 3.9rem;
   font-size: 2.5rem;
+  font-weight: 600;
   background-color: #d6f1c4;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
 }
 
 .content-box-table {
@@ -20,16 +24,47 @@
   border-collapse: collapse;
 }
 
-.content-box-table th,
 .content-box-table td {
-  padding: 1.55rem 0.75rem;
+  padding: 2rem 0.9rem 2rem 0;
   text-align: left;
   border-bottom: 1px solid #000;
   font-size: 1.25rem;
 }
 
+tbody > tr > td:first-child {
+  padding-left: 0.9rem;
+}
+
+tbody > tr > td:last-child {
+  text-align: center;
+}
+
+tbody > tr:last-child td {
+  border-bottom: none;
+}
+
 .content-box-table th {
-  font-weight: bold;
+  font-weight: 600;
   color: #000;
   font-size: 1.5rem;
+  border-bottom: 1px solid #000;
+  text-align: left;
+}
+
+thead > tr > th:nth-child(6) {
+  min-width: 10rem;
+}
+
+.patient-column {
+  font-weight: 600;
+}
+
+@media (max-width: 834px) {
+  .content-box-container h2 {
+    font-size: 2rem;
+  }
+
+  .content-box-table th {
+    font-size: 1.25rem;
+  }
 }

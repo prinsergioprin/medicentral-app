@@ -11,3 +11,9 @@
 .back-arrow {
   margin-right: 0.69rem;
 }
+
+@media (max-width: 425px) {
+  .go-back-button {
+    display: none;
+  }
+}

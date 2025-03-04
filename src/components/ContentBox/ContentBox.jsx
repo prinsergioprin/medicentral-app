@@ -22,7 +22,7 @@ const ContentBox = ({ title, columns, data }) => {
               {columns.map((column, columnIndex) => (
                 <td
                   key={columnIndex}
-                  className={column === "Edit" ? "edit-column" : ""}
+                  className={column === "Patient" ? "patient-column" : ""}
                 >
                   {column === "" ? (
                     <img
