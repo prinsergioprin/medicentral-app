@@ -14,7 +14,7 @@ const ListItem = ({ text, path }) => {
   );
 };
 
-// ADD PATHS TO LIST ITEMS BELOW!
+// ADD NAVLINK PATHS TO LIST ITEMS BELOW!
 const DashboardComponent = () =>
   // check state to display
   // {isOpen}, {onClose}
