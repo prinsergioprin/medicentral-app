@@ -8,6 +8,9 @@ import {
 import DashboardComponent from "./Components/DashboardComponent/DashboardComponent";
 import HomePageComponent from "./Components/HomePageComponent/HomePageComponent";
 import MainHeadingComponent from "./Components/MainHeadingComponent/MainHeadingComponent";
+import Navbar from './Components/Navbar/Navbar';
+import LogInSection from './Components/LogInSection/LogInSection';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   useEffect(() => {
@@ -24,7 +27,7 @@ function App() {
   return (
     // <Router>
       <div className="App">
-        {/* <Header /> */}
+        < Navbar/>
         {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
        onToggleDashboard={toggleDashboard} */}
         <div className="main-content">
@@ -51,12 +54,13 @@ function App() {
             {/* </Switch> */} 
 
             <HomePageComponent />
+              <LogInSection />
 
             {/* ROUTE PATIENT DATABASE */}
           </div>
         </div>
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     //{/* </Router> */}
   );
