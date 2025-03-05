@@ -1,14 +1,47 @@
-import React from 'react';
-import './Navbar.css';
+import React from "react";
+import { Link, NavLink } from "react-router";
+import "./Navbar.css";
 import MedicentralLogoNav from "../../Assets/MedicentralLogoNav.svg";
+import MedicentralLogoS from "../../Assets/MedicentalLogoS.png";
+import BurgerIcon from "../../Assets/Burger-icon.png";
 
-function Navbar() {
+function Navbar({ showNavRight = true }) {
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <img src={MedicentralLogoNav} alt="Medicentral Logo" className="navbar-logo" /> 
+    <header className="header">
+      <div className="navbar-left">
+      <button className="burger-menu">
+        <img src={BurgerIcon} alt="Menu" />
+      </button>
+      <Link to="/" className="navbar-logo">
+        <img src={MedicentralLogoNav} alt="Medicentral Logo" />{" "}
+      </Link>
       </div>
-    </nav>
+      {showNavRight && (
+        <nav className="navbar-right">
+          <ul>
+            <li>
+              <NavLink
+                to="/homepage"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                HOME
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/profile" className="nav-link">
+                PROFILE
+              </NavLink>
+            </li>
+            <li>
+              <button className="log-out-btn">LOG OUT</button>
+            </li>
+            <li><img src={MedicentralLogoS} alt="Medicentral logo" className="small-logo"/></li>
+          </ul>
+        </nav>
+      )}
+    </header>
   );
 }
 

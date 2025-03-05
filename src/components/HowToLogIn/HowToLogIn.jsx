@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router";
 import "./HowToLogIn.css";
+import LogInSection from "../LogInSection/LogInSection";
 
 const HowToLogIn = () => {
   return (
+    <>
+    <LogInSection/>
     <div className="how-to-login">
       <h3 className="login-heading">How to log in</h3>
       <br />
@@ -15,7 +19,11 @@ const HowToLogIn = () => {
         <br /> It is important that you log out and close your browser when you
         are finished in logged in mode.
       </p>
+      <Link to="/homepage" className="medical-staff-button">
+        <span className="arrow">▼</span> BANK ID
+      </Link>
     </div>
+    </>
   );
 };
 
