@@ -1,0 +1,79 @@
+@import "../../App.css";
+
+.patientwidget-card {
+  background-color: var(--secondary-light);
+  border: 2px solid var(--text-color);
+  border-radius: 1.25rem;
+  .patientwidget-title {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    h3 {
+      font-size: var(--font-size-medium);
+      font-weight: var(--font-weight-semi-bold);
+      align-items: top;
+    }
+    img {
+      height: 4.75rem;
+      width: auto;
+    }
+  }
+  .patientwidget-details {
+    font-size: var(--font-size-small);
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .headLine {
+      font-weight: bold;
+    }
+    .patientwidget-details-line1,
+    .patientwidget-details-line2 {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      max-width: 25ch;
+      p {
+        font-size: var(--font-size-small);
+      }
+    }
+  }
+}
+
+.read-more-button {
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  --font-weight-semi-bold: 600;
+  margin-top: 3.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* TABLET: _____________________________________ */
+@media (max-width: 834px) {
+  .patientwidget-card .patientwidget-title img {
+    height: 3.25rem;
+  }
+  .patientwidget-card {
+    .patientwidget-title,
+    .patientwidget-details {
+      padding: 1.5rem;
+    }
+  }
+}
+
+/* MOBILE: _____________________________________ */
+@media (max-width: 425px) {
+  .patientwidget-details {
+    .patientwidget-details-line1,
+    .patientwidget-details-line2 {
+      p {
+        font-size: var(--font-size-small-mobile);
+      }
+    }
+  }
+}

@@ -15,7 +15,6 @@ import PastActivitiesBox from "./Components/PastActivitiesBox/PastActivitiesBox"
 import GoBackButton from "./Components/GoBackButton/GoBackButton";
 import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
 import PatientSearch from "./Components/PatientSearch/PatientSearch";
-import PatientHeader from "./Components/PatientHeader/PatientHeader";
 import PatientWidgets from "./Components/PatientWidgets/PatientWidgets";
 
 function App() {
@@ -65,8 +64,7 @@ function App() {
           <PastActivitiesBox />
           <HowToLogIn />
           <PatientSearch />
-          <PatientHeader />
-          {/* <PatientWidgets /> */}
+          <PatientWidgets />
 
           {/* ROUTE PATIENT DATABASE */}
         </div>

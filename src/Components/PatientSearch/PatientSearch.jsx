@@ -1,10 +1,12 @@
 import React from "react";
 import "./PatientSearch.css";
 import searchIcon from "../../Assets/search.png";
+import GoBackButton from "../GoBackButton/GoBackButton";
 
 function PatientSearch() {
   return (
     <div className="patientsearch-container">
+      <GoBackButton />
       <h1 className="patientdatabase-header">Patient database</h1>
       <div className="patientsearch-heading">Search for a patient:</div>
       <div className="patientsearch-input-wrapper">

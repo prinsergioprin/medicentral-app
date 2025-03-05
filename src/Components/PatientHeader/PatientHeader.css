@@ -1,11 +1,10 @@
 .patientheader-box {
   display: flex;
   flex-direction: row;
-  /* gap: 2rem; */
   width: 100%;
   height: 4rem;
   padding-top: 0.9rem;
-  background-color: #d6f1c4;
+  background-color: #f1fbea;
   color: black;
   --font-size-small: 1.25rem;
 }
@@ -29,4 +28,32 @@
 .arrowIcon {
   height: 1.1rem;
   padding-left: 0.7rem;
+}
+
+/* TABLET: ______________________________ */
+@media (max-width: 834px) {
+  /* .patientheader-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 4rem;
+    padding-top: 0.9rem;
+    background-color: #f1fbea;
+    color: black;
+    --font-size-small: 1.25rem;
+  } */
+}
+
+/* MOBILE: ______________________________ */
+@media (max-width: 425px) {
+  /* .patientheader-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 4rem;
+    padding-top: 0.9rem;
+    background-color: #f1fbea;
+    color: black;
+    --font-size-small: 1.25rem;
+  } */
 }
