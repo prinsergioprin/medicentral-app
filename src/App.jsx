@@ -8,6 +8,7 @@ import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
 import HomePageLayout from "./Components/HomePageLayoutComponent/HomePageLayout";
 import PastActivitiesLayout from "./Components/PastActivitiesLayout/PastActivitiesLayout";
 import PatientDatabaseLayout from "./Components/PatientDatabaseLayout/PatientDatabaseLayout";
+import MedicalJournalLayout from "./Components/MedicalJournalLayout/MedicalJournalLayout";
 
 function App() {
   useEffect(() => {
@@ -44,6 +45,7 @@ function App() {
             {/* add link inside element*/}
 
             <Route path="/past-activities" element={<PastActivitiesLayout />} />
+            <Route path="/medical-journal" element={<MedicalJournalLayout />} />
           </Routes>
         </div>
         <Footer />
