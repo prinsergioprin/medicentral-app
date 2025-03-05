@@ -1,20 +1,29 @@
 import React from "react";
-// import { NavLink} from "react-router";
+import { NavLink } from "react-router";
 import crossIcon from "../../Assets/cross-icon.svg";
 import "./DashboardComponent.css";
 
 const ListItem = ({ text, path }) => {
+  // if list item doesn't have a path, it's rendered as a regular a tag
+  const LinkComponent = path ? NavLink : "a";
   return (
     <li className="dashboard-list-item">
-      {/* <NavLink to={path}> */}
-      <img src={crossIcon} alt="Cross icon" />
-      <span className="text">{text}</span>
-      {/* </NavLink> */}
+      <LinkComponent
+        to={path}
+        className={({ isActive }) =>
+          path && isActive
+            ? "dashboard-list-item active"
+            : "dashboard-list-item"
+        }
+      >
+        <img src={crossIcon} alt="Cross icon" />
+        <span className="text">{text}</span>
+      </LinkComponent>
     </li>
   );
 };
 
-// ADD NAVLINK PATHS TO LIST ITEMS BELOW!
+// ADD CONNECTION TO BURGER MENU!
 const DashboardComponent = () =>
   // check state to display
   // {isOpen}, {onClose}
@@ -25,8 +34,9 @@ const DashboardComponent = () =>
       <aside className="dashboard">
         <div className="dashboard-top">
           <h3>Dashboard</h3>
-          <button className="dashboard-close-btn"
-          // onClick={onClose}
+          <button
+            className="dashboard-close-btn"
+            // onClick={onClose}
           >
             &times;
           </button>
@@ -34,11 +44,11 @@ const DashboardComponent = () =>
         <hr />
         <div className="dashboard-content">
           <ul>
-            <ListItem text="Home" />
-            <ListItem text="Patient database" />
-            <ListItem text="Schedule" />
-            <ListItem text="Inbox" />
-            <ListItem text="Past activities" />
+            <ListItem text="Home" path="/homepage" />
+            <ListItem text="Patient database" path="/patient-database" />
+            <ListItem text="Schedule" path="" />
+            <ListItem text="Inbox" path="" />
+            <ListItem text="Past activities" path="" />
           </ul>
           <button className="log-out-btn">LOG OUT</button>
         </div>

@@ -50,10 +50,18 @@
       gap: 1.5rem;
       font-size: var(--font-size-small);
       font-weight: var(--font-weight-regular);
-      .dashboard-list-item {
+      .dashboard-list-item a {
         display: flex;
         align-items: center;
         gap: 1rem;
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          font-weight: var(--font-weight-semi-bold);
+        }
+        &.active {
+          font-weight: var(--font-weight-semi-bold);
+        }
       }
     }
     .log-out-btn {
