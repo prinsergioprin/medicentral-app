@@ -1,5 +1,4 @@
 .content-box-container {
-  max-width: 71.88rem;
   border: 2px solid #000;
   border-radius: 1.25rem;
   margin-bottom: 1.25rem;
@@ -31,17 +30,32 @@
   font-size: 1.25rem;
 }
 
-tbody > tr > td:first-child {
+td:first-child {
   padding-left: 0.9rem;
 }
 
-tbody > tr > td:last-child {
+td.medjournal-column:last-child {
   text-align: center;
 }
 
-tbody > tr:last-child td {
+td.year-column {
+  width: 24%;
+}
+
+tr:nth-child(2) > td.year-column {
+  font-weight: 600;
+  color: #000;
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+tr:last-child td {
   border-bottom: none;
 }
+
+/* tr:nth-child(2) img {
+  display: none;
+} */
 
 .content-box-table th {
   font-weight: 600;
@@ -49,9 +63,10 @@ tbody > tr:last-child td {
   font-size: 1.5rem;
   border-bottom: 1px solid #000;
   text-align: left;
+  padding-right: 0.5rem;
 }
 
-thead > tr > th:nth-child(6) {
+th:nth-child(6) {
   min-width: 10rem;
 }
 
@@ -64,7 +79,66 @@ thead > tr > th:nth-child(6) {
     font-size: 2rem;
   }
 
-  .content-box-table th {
+  .content-box-table th,
+  tr:nth-child(2) > td.year-column {
     font-size: 1.25rem;
+  }
+
+  .content-box-table td {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .content-box-container {
+    margin-top: 1.69rem;
+    border: none;
+    border-top: 2px solid #000;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .content-box-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-box-container h2,
+  th.year-column,
+  tr:nth-child(2) > td.year-column {
+    border-radius: 0;
+    padding: 2rem 1.25rem;
+    margin: 0;
+  }
+
+  .content-box-table th:not(.year-column) {
+    display: none;
+  }
+
+  .content-box-table .content-box-table tr {
+    display: block;
+  }
+
+  .content-box-table tr {
+    border-bottom: 1px solid #000;
+  }
+
+  .content-box-table td {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0 1.25rem 1.25rem;
+  }
+
+  td:first-child {
+    text-align: right;
+    padding-top: 1.25rem;
+  }
+
+  td:empty {
+    display: none;
+  }
+
+  td.medjournal-column {
+    visibility: hidden;
   }
 }
