@@ -32,7 +32,6 @@
   --font-weight-button: 500;
   --font-weight-regular: 300;
 
-
   /* font-family: "Raleway", sans-serif; */
 }
 
@@ -74,5 +73,11 @@ body {
   .right-side {
     width: 100%;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .right-side {
+    padding: 0;
   }
 }

@@ -48,7 +48,7 @@ const DashboardComponent = () =>
             <ListItem text="Patient database" path="/patient-database" />
             <ListItem text="Schedule" path="" />
             <ListItem text="Inbox" path="" />
-            <ListItem text="Past activities" path="" />
+            <ListItem text="Past activities" path="/past-activities" />
           </ul>
           <button className="log-out-btn">LOG OUT</button>
         </div>
