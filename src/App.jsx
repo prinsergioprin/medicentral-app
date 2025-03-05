@@ -23,7 +23,9 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+
+        {/* make false on first 3 pages... */}
+      <Navbar showNavRight={true} />
         {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
        onToggleDashboard={toggleDashboard} */}
 
