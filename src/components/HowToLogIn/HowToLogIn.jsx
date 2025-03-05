@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router";
 import "./HowToLogIn.css";
+import LogInSection from "../LogInSection/LogInSection";
 
 const HowToLogIn = () => {
   return (
+    <>
+    <LogInSection/>
     <div className="how-to-login">
       <h3 className="login-heading">How to log in</h3>
       <br />
@@ -20,6 +23,7 @@ const HowToLogIn = () => {
         <span className="arrow">▼</span> BANK ID
       </Link>
     </div>
+    </>
   );
 };
 
