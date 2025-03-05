@@ -2,6 +2,7 @@ import React from "react";
 import "./ContentBox.css";
 import EditIcon from "../../Assets/edit-icon.png";
 import JournalArrow from "../../Assets/journal-arrow.png";
+import { Link } from "react-router";
 
 const ContentBox = ({ title, columns, data }) => {
   return (
@@ -43,11 +44,13 @@ const ContentBox = ({ title, columns, data }) => {
                   }
                 } else if (column === "Med. journal") {
                   cellContent = (
-                    <img
-                      src={JournalArrow}
-                      alt="Go to journal"
-                      className="journal-arrow"
-                    />
+                    <Link to="/medical-journal">
+                      <img
+                        src={JournalArrow}
+                        alt="Go to journal"
+                        className="journal-arrow"
+                      />
+                    </Link>
                   );
                 } else if (Array.isArray(row[column])) {
                   cellContent = row[column].map((item, i) => (

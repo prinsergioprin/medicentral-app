@@ -9,6 +9,10 @@
   margin: 1.69rem 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .back-arrow {
   margin-right: 0.69rem;
 }
