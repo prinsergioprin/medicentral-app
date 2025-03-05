@@ -23,9 +23,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-
         {/* make false on first 3 pages... */}
-      <Navbar showNavRight={true} />
+        <Navbar showNavRight={true} />
         {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
        onToggleDashboard={toggleDashboard} */}
 
@@ -44,7 +43,7 @@ function App() {
             {/* <Route path="/patient-page" element={<PatientPage />} /> */}
             {/* add link inside element*/}
 
-            <Route path="/medical-journal" element={<PastActivitiesLayout />} />
+            <Route path="/past-activities" element={<PastActivitiesLayout />} />
           </Routes>
         </div>
         <Footer />

@@ -4,7 +4,7 @@ import GoBackButton from "../GoBackButton/GoBackButton";
 import PatientHeader from "../PatientHeader/PatientHeader";
 import NewVisitInfo from "../NewVisitInfo/NewVisitInfo";
 
-const MedicalJournalPage = () => {
+const MedicalJournalLayout = () => {
   const columns = ["", "2025", "Description", "Treatment", "Notes"];
 
   const data = [
@@ -65,4 +65,4 @@ const MedicalJournalPage = () => {
   );
 };
 
-export default MedicalJournalPage;
+export default MedicalJournalLayout;

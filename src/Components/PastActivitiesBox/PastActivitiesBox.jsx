@@ -1,8 +1,7 @@
 import React from "react";
 import ContentBox from "../ContentBox/ContentBox";
-import GoBackButton from "../GoBackButton/GoBackButton";
 
-const PastActivitiesPage = () => {
+const PastActivitiesBox = () => {
   const columns = [
     "",
     "Timestamp",
@@ -56,10 +55,9 @@ const PastActivitiesPage = () => {
 
   return (
     <div>
-      <GoBackButton />
       <ContentBox title="Past activities" columns={columns} data={data} />
     </div>
   );
 };
 
-export default PastActivitiesPage;
+export default PastActivitiesBox;
