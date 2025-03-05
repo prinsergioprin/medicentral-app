@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 import "./HowToLogIn.css";
 
 const HowToLogIn = () => {
@@ -15,6 +16,9 @@ const HowToLogIn = () => {
         <br /> It is important that you log out and close your browser when you
         are finished in logged in mode.
       </p>
+      <Link to="/homepage" className="medical-staff-button">
+        <span className="arrow">▼</span> BANK ID
+      </Link>
     </div>
   );
 };

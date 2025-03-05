@@ -1,5 +1,6 @@
-import React from 'react';
-import './LogInSection.css';
+import React from "react";
+import { Link } from "react-router";
+import "./LogInSection.css";
 import MedicentralLogo from "../../Assets/MedicentralLogo.svg";
 
 function LogInSection() {
@@ -9,14 +10,21 @@ function LogInSection() {
         <h1>Welcome!</h1>
         <p>Access medical data all in one place.</p>
         <p className="choose-user">Choose user:</p>
-        <button className="medical-staff-button">
+        <Link to="/login" className="medical-staff-button">
           <span className="arrow">▼</span> MEDICAL STAFF
-        </button>
+        </Link>
         <button className="patient-button">
           <span className="arrow">▶</span> PATIENT
         </button>
-        <img src={MedicentralLogo} alt="Medicentral Logo" className="medicentral-logo" />
-        <p className="contact-text">If you have any questions, please reach out to your dedicated Medicentral representative or contact us <b>here</b>.</p>
+        <img
+          src={MedicentralLogo}
+          alt="Medicentral Logo"
+          className="medicentral-logo"
+        />
+        <p className="contact-text">
+          If you have any questions, please reach out to your dedicated
+          Medicentral representative or contact us <b>here</b>.
+        </p>
       </div>
     </section>
   );

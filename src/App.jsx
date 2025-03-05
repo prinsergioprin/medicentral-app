@@ -1,22 +1,16 @@
 import "./App.css";
 import { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  // Routes,
-  // Route
-} from "react-router";
-import DashboardComponent from "./Components/DashboardComponent/DashboardComponent";
-import HomePageComponent from "./Components/HomePageComponent/HomePageComponent";
-import MainHeadingComponent from "./Components/MainHeadingComponent/MainHeadingComponent";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
 import Navbar from "./Components/Navbar/Navbar";
 import LogInSection from "./Components/LogInSection/LogInSection";
 import Footer from "./Components/Footer/Footer";
-import PastActivitiesBox from "./Components/PastActivitiesBox/PastActivitiesBox";
-import GoBackButton from "./Components/GoBackButton/GoBackButton";
 import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
 import PatientSearch from "./Components/PatientSearch/PatientSearch";
 import PatientHeader from "./Components/PatientHeader/PatientHeader";
 import PatientWidgets from "./Components/PatientWidgets/PatientWidgets";
+import HomePageLayout from "./Components/HomePageLayoutComponent/HomePageLayout";
+import PastActivitiesLayout from "./Components/PastActivitiesLayout/PastActivitiesLayout";
+import PatientDatabaseLayout from "./Components/PatientDatabaseLayout/PatientDatabaseLayout";
 
 function App() {
   useEffect(() => {
@@ -31,50 +25,28 @@ function App() {
   // };
 
   return (
-    // <Router>
+    <Router>
     <div className="App">
       <Navbar />
       {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
        onToggleDashboard={toggleDashboard} */}
+
       <div className="main-content">
-        {/* ROUTE LANDING PAGE */}
-        {/* ROUTE METHOD PAGE */}
-        {/* ROUTE LOGIN PAGE */}
 
-        {/* ROUTE HOMEPAGE */}
+      <Routes>
+            <Route path="/" element={<LogInSection />} />
+            {/* <Route path="/log-in-method" element={<LogInMethod />} /> */}
+            <Route path="/login" element={<HowToLogIn />} />
+            <Route path="/homepage" element={<HomePageLayout />} />
+            <Route path="/patient-database" element={<PatientDatabaseLayout />} />
+            {/* <Route path="/patient-page" element={<PatientPage />} /> */}
+            <Route path="/medical-journal" element={<PastActivitiesLayout />} />
+          </Routes>
 
-        <DashboardComponent
-        // isOpen={isDashboardOpen} onClose={toggleDashboard}
-        />
-        <div className="right-side">
-          <MainHeadingComponent
-            mainHeading="Hello, Doc"
-            secondaryHeading="What are you looking for today?"
-          />
-          {/* change content on different routes */}
-
-          {/* <Switch>
-              <Route exact path="/" component={HomePageComponent} />
-              <Route path="/patient" component={PatientDatabaseComponent} />
-              {/* Add more routes */}
-          {/* </Switch> */}
-
-          <HomePageComponent />
-          <LogInSection />
-          <GoBackButton />
-          <PastActivitiesBox />
-          <HowToLogIn />
-          <PatientSearch />
-          <PatientHeader />
-          {/* <PatientWidgets /> */}
-
-          {/* ROUTE PATIENT DATABASE */}
-        </div>
-      </div>
-
-      <Footer />
+          </div>
+          <Footer />
     </div>
-    //{/* </Router> */}
+  </Router>
   );
 }
 

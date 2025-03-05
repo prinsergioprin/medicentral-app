@@ -1,14 +1,28 @@
 import React from "react";
+import { Link } from "react-router";
 import "../HomeCardComponent/HomeCardComponent.css";
 // import { NavLink } from "react-router";
 
 // EVERY CARD IS A LINK TOO, ADD PATHS!
-const HomeCardComponent = ({ title, count, icon, tag, paragraph1, paragraph2 }) => {
+const HomeCardComponent = ({
+  title,
+  count,
+  icon,
+  tag,
+  paragraph1,
+  paragraph2,
+  linkTo,
+}) => {
   return (
     // <NavLink to={path}>
     <div className="homepage-card">
       <div className="title-row">
-        <h3>{title}{count}</h3>
+        <Link to={linkTo} style={{ textDecoration: "none" }}>
+        <h3>
+          {title}
+          {count}
+        </h3>
+        </Link>
         <img src={icon} alt="Cross icon" />
       </div>
       <div className="details-row">

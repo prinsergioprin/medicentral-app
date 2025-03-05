@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 import "../HomePageComponent/HomePageComponent.css";
 import HomeCardComponent from "../HomeCardComponent/HomeCardComponent";
 import patientIcon from "../../Assets/patient-icon.png";
@@ -11,12 +12,13 @@ const dotIcon = String.fromCodePoint(0x2022);
 const HomePageComponent = () => {
   return (
     <section className="homepage-container">
-      <HomeCardComponent
-        title="Patient database"
-        tag={0}
-        icon={patientIcon}
-        paragraph1="Access a patient's medical history, make updates, add visit info, among other tasks."
-      />
+        <HomeCardComponent
+          title="Patient database"
+          tag={0}
+          linkTo="/patient-database"
+          icon={patientIcon}
+          paragraph1="Access a patient's medical history, make updates, add visit info, among other tasks."
+        />
       <HomeCardComponent
         title="Your schedule"
         icon={scheduleIcon}

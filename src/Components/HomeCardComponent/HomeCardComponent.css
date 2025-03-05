@@ -12,6 +12,7 @@
     padding: 2rem;
     border-radius: 1.25rem 1.25rem 0 0;
     h3 {
+      color: black;
       font-size: var(--font-size-medium);
       font-weight: var(--font-weight-semi-bold);
       align-items: top;
