@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router";
 import "../HomePageComponent/HomePageComponent.css";
 import HomeCardComponent from "../HomeCardComponent/HomeCardComponent";
 import patientIcon from "../../Assets/patient-icon.png";
