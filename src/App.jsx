@@ -37,10 +37,10 @@ function App() {
               path="/patient-database"
               element={<PatientDatabaseLayout />}
             />
-            {/* add link */}
+            {/* add link inside element*/}
 
             {/* <Route path="/patient-page" element={<PatientPage />} /> */}
-            {/* add link */}
+            {/* add link inside element*/}
 
             <Route path="/medical-journal" element={<PastActivitiesLayout />} />
           </Routes>

@@ -2,7 +2,7 @@
 
 .dashboard {
   width: 26%;
-  min-width: 16rem;
+  min-width: 16.5rem;
   min-height: 100%;
   padding: 2rem;
   background-color: var(--base-shadow);
@@ -60,7 +60,7 @@
           font-weight: var(--font-weight-semi-bold);
         }
         &.active {
-          font-weight: var(--font-weight-semi-bold);
+          font-weight: 700;
         }
       }
     }
