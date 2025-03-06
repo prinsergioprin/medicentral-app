@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import './BankidLogin.css';
 
 function BankidLogin() {
@@ -17,7 +18,9 @@ function BankidLogin() {
           placeholder="Ex. 0123456789"
         />
       </div>
-      <button className="login-button">LOG IN</button>
+      <Link to="/homepage" className="medical-staff-button">
+              <span className="arrow">▼</span>LOG IN
+            </Link>
     </div>
   );
 }

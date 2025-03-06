@@ -7,11 +7,11 @@ function LogInSection() {
   return (
     <section className="login-section">
       <div className="login-container">
-        <h1 className="login-welcome">Welcome!</h1>
-        <div className="login-access">Access medical data all in one place.</div>
-        <div className="choose-user">Choose user:</div>
-        <button className="medical-staff-button">
-          <span className="arrow">▼</span> MEDICAL STAFF
+        <h2 className="login-welcome">Welcome!</h2>
+        <p className="login-access">Access medical data all in one place.</p>
+        <p className="choose-user">Choose user:</p>
+        <Link to="/login-method" className="medical-staff-button">
+          <span className="arrow">▼</span> MEDICAL STAFF 
         </Link>
         <button className="patient-button">
           <span className="arrow">▶</span> PATIENT
@@ -22,7 +22,7 @@ function LogInSection() {
        <p>dedicated Medicentral representative or contact us <b>here</b>.</p>
       </div>
      <div className="logo-container">
-       <img src={MedicentralLogoImage} alt="Medicentral Logo" className="logo-image" />
+       <img src={MedicentralLogo} alt="Medicentral Logo" className="logo-image" />
    </div>
    </section>
   );
