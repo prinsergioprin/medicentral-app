@@ -6,6 +6,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1.69rem 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .back-arrow {

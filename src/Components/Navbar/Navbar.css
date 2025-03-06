@@ -1,16 +1,84 @@
 @import "../../App.css";
 
-.navbar {
+.header {
   background-color: var(--secondary-color);
-  padding: 1rem 0;
-}
-
-.navbar-container {
-  display: flex;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: flex-start; 
-  max-width: 90rem; 
-  margin: 0 auto;
-  padding: 0 2rem;
+  .navbar-left {
+    display: flex;
+    .burger-menu {
+      display: none;
+      scale: 0.6;
+      width: auto;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+  }
+  .navbar-right {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      .nav-link {
+        text-decoration: none;
+        color: var(--text-color);
+        font-family: "Raleway" sans-serif;
+        font-size: var(--font-size-small);
+        font-weight: 500;
+        margin-right: 4rem;
+      }
+      .nav-link.active {
+        font-weight: 700;
+      }
+      .small-logo {
+        display: none;
+        scale: 0.75;
+      }
+    }
+  }
 }
 
+.log-out-btn {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--font-size-small);
+  border-radius: 0.625rem;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  padding: 0.6rem 1.6rem;
+  font-weight: 500;
+}
+
+@media (max-width: 834px) {
+  .navbar-logo {
+    display: none;
+  }
+  .header {
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    .navbar-left {
+      .burger-menu {
+        display: inline-block;
+      }
+    }
+    .navbar-right {
+      ul {
+        .small-logo {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .log-out-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+}

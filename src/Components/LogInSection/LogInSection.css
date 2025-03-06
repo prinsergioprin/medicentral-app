@@ -88,9 +88,21 @@
 @media (max-width: 834px) {
   .login-section {
     width: 100%;
-    padding: 1rem;
+    /* padding: 1rem;
     text-align: center;
-    align-items: center; 
+    align-items: center; */ 
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .medical-staff-button {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  .patient-button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
   }
 
   .login-welcome {

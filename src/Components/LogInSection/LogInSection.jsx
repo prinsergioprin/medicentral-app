@@ -1,6 +1,7 @@
-import React from 'react';
-import './LogInSection.css';
-import MedicentralLogoImage from '../../Assets/MedicentralLogoLarge.svg';
+import React from "react";
+import { Link } from "react-router";
+import "./LogInSection.css";
+import MedicentralLogo from "../../Assets/MedicentralLogo.svg";
 
 function LogInSection() {
   return (
@@ -11,7 +12,7 @@ function LogInSection() {
         <div className="choose-user">Choose user:</div>
         <button className="medical-staff-button">
           <span className="arrow">▼</span> MEDICAL STAFF
-        </button>
+        </Link>
         <button className="patient-button">
           <span className="arrow">▶</span> PATIENT
         </button>
@@ -20,7 +21,6 @@ function LogInSection() {
        <p className="contact-text">If you have any questions, please reach out to your</p> 
        <p>dedicated Medicentral representative or contact us <b>here</b>.</p>
       </div>
-    
      <div className="logo-container">
        <img src={MedicentralLogoImage} alt="Medicentral Logo" className="logo-image" />
    </div>
