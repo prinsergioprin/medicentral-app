@@ -10,6 +10,7 @@ import HomePageComponent from "./Components/HomePageComponent/HomePageComponent"
 import MainHeadingComponent from "./Components/MainHeadingComponent/MainHeadingComponent";
 import Navbar from "./Components/Navbar/Navbar";
 import LogInSection from "./Components/LogInSection/LogInSection";
+import MethodPage from "./Components/MethodPage/MethodPage";
 import Footer from "./Components/Footer/Footer";
 import PastActivitiesBox from "./Components/PastActivitiesBox/PastActivitiesBox";
 import GoBackButton from "./Components/GoBackButton/GoBackButton";
@@ -17,6 +18,7 @@ import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
 import PatientSearch from "./Components/PatientSearch/PatientSearch";
 import PatientHeader from "./Components/PatientHeader/PatientHeader";
 import PatientWidgets from "./Components/PatientWidgets/PatientWidgets";
+import MedicentralLogoLargeComponent from "./Components/MedicentralLogoLarge/MedicentralLogoLargeComponent";
 
 function App() {
   useEffect(() => {
@@ -61,9 +63,10 @@ function App() {
 
           <HomePageComponent />
           <LogInSection />
+          <MethodPage />
+          <HowToLogIn />
           <GoBackButton />
           <PastActivitiesBox />
-          <HowToLogIn />
           <PatientSearch />
           <PatientHeader />
           {/* <PatientWidgets /> */}
