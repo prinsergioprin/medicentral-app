@@ -1,6 +1,6 @@
 import "./App.css";
 import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router";
 import Navbar from "./Components/Navbar/Navbar";
 import LogInSection from "./Components/LogInSection/LogInSection";
 import Footer from "./Components/Footer/Footer";
@@ -25,14 +25,14 @@ function App() {
     <Router>
       <div className="App">
         {/* make false on first 3 pages... */}
-        <Navbar showNavRight={true} />
+        <DynamicNavbar />
         {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
        onToggleDashboard={toggleDashboard} */}
 
         <div className="main-content">
           <Routes>
             <Route path="/" element={<LogInSection />} />
-            {/* <Route path="/log-in-method" element={<LogInMethod />} /> */}
+            {/* <Route path="/login-method" element={<LogInMethod />} /> */}
             <Route path="/login" element={<HowToLogIn />} />
             <Route path="/homepage" element={<HomePageLayout />} />
             <Route
@@ -53,5 +53,11 @@ function App() {
     </Router>
   );
 }
+
+const DynamicNavbar = () => {
+  const location = useLocation();
+  const showNavRight = location.pathname !== "/" && location.pathname !== "/login-method" && location.pathname !== "/login";
+  return <Navbar showNavRight={showNavRight} />;
+};
 
 export default App;
