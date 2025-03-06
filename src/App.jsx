@@ -7,6 +7,8 @@ import LogInSection from "./Components/LogInSection/LogInSection";
 import MethodPage from "./Components/MethodPage/MethodPage";
 import Footer from "./Components/Footer/Footer";
 import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
+import PatientSearch from "./Components/PatientSearch/PatientSearch";
+import PatientWidgets from "./Components/PatientWidgets/PatientWidgets";
 import HomePageLayout from "./Components/HomePageLayoutComponent/HomePageLayout";
 import PastActivitiesLayout from "./Components/PastActivitiesLayout/PastActivitiesLayout";
 import PatientDatabaseLayout from "./Components/PatientDatabaseLayout/PatientDatabaseLayout";
@@ -43,8 +45,7 @@ function App() {
             />
             {/* add link inside element*/}
 
-            {/* <Route path="/patient-page" element={<PatientPage />} /> */}
-            {/* add link inside element*/}
+            <Route path="/patient-page" element={<PatientWidgets />} />
 
             <Route path="/past-activities" element={<PastActivitiesLayout />} />
             <Route path="/medical-journal" element={<MedicalJournalLayout />} />
