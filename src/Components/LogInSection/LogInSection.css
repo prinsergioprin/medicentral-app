@@ -62,6 +62,29 @@
   bottom: 0;
 }
 
+.logo-container {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 23.4rem;  
+  height: 28rem;
+  display: block;
+}
+
+
 @media (max-width: 834px) {
   .login-section {
     width: 100%;

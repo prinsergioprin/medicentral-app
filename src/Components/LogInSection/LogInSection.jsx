@@ -1,5 +1,6 @@
 import React from 'react';
 import './LogInSection.css';
+import MedicentralLogoImage from '../../Assets/MedicentralLogoLarge.svg';
 
 function LogInSection() {
   return (
@@ -19,8 +20,11 @@ function LogInSection() {
        <p className="contact-text">If you have any questions, please reach out to your</p> 
        <p>dedicated Medicentral representative or contact us <b>here</b>.</p>
       </div>
-    </section>
     
+     <div className="logo-container">
+       <img src={MedicentralLogoImage} alt="Medicentral Logo" className="logo-image" />
+   </div>
+   </section>
   );
 }
 

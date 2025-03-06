@@ -23,7 +23,7 @@
   .national-id-input label {
     margin-bottom: 5px;
     font-size: var(--font-size-small-mobile);
-    color: var(--text-color);
+    background-color: var(--accent-color);
   }
   
   .method-select select {

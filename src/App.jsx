@@ -9,6 +9,7 @@ import DashboardComponent from "./Components/DashboardComponent/DashboardCompone
 import HomePageComponent from "./Components/HomePageComponent/HomePageComponent";
 import MainHeadingComponent from "./Components/MainHeadingComponent/MainHeadingComponent";
 import Navbar from "./Components/Navbar/Navbar";
+import BankidLogin from "./Components/BankidLogin/BankidLogin";
 import LogInSection from "./Components/LogInSection/LogInSection";
 import MethodPage from "./Components/MethodPage/MethodPage";
 import Footer from "./Components/Footer/Footer";
@@ -18,7 +19,6 @@ import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
 import PatientSearch from "./Components/PatientSearch/PatientSearch";
 import PatientHeader from "./Components/PatientHeader/PatientHeader";
 import PatientWidgets from "./Components/PatientWidgets/PatientWidgets";
-import MedicentralLogoLargeComponent from "./Components/MedicentralLogoLarge/MedicentralLogoLargeComponent";
 
 function App() {
   useEffect(() => {
@@ -62,6 +62,7 @@ function App() {
           {/* </Switch> */}
 
           <HomePageComponent />
+          <BankidLogin />
           <LogInSection />
           <MethodPage />
           <HowToLogIn />
