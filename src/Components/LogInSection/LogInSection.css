@@ -1,46 +1,98 @@
 .login-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  }
-  
-  .login-container {
-    max-width: 800px;
-    padding: 2rem;
-  }
-  
-  .login-container h1 {
-    font-size: var(--font-size-large);
-    margin-bottom: 1rem;
-  }
-  
-  .login-container p {
-    font-size: var(--font-size-medium);
-    margin-bottom: 2rem;
-  }
-  
-  .choose-user {
-    font-size: var(--font-size-small);
-    margin-bottom: 0.5rem;
-    text-align: left;
-  }
-  
-  .medical-staff-button,
-  .patient-button {
-    font-size: var(--font-size-small);
-    padding: 0.75rem 1.5rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: flex-start; /* Align items to the left */
+  padding: 2rem;
+}
+
+.login-container {
+  max-width: 50rem;
+  padding: 2rem;
+}
+
+.login-welcome {
+  font-size: var(--font-size-large);
+}
+
+.login-access {
+  font-size: var(--font-size-medium);
+  margin-bottom: 1.5rem; 
+  font-weight: 500;
+}
+
+.choose-user {
+  font-size: var(--font-size-x-small);
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.medical-staff-button,
+.patient-button {
+  font-size: var(--font-size-small);
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1rem; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 322px;
+  justify-content: left;
+  font-weight: var(--font-weight-buttton);
+}
+
+.medical-staff-button {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.patient-button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.contact-text {
+  font-size: var(--font-size-x-small);
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  margin-top: 1rem; 
+  bottom: 0;
+}
+
+.logo-container {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 23.4rem;  
+  height: 28rem;
+  display: block;
+}
+
+
+@media (max-width: 834px) {
+  .login-section {
     width: 100%;
+    /* padding: 1rem;
+    text-align: center;
+    align-items: center; */ 
     justify-content: center;
+    text-decoration: none;
   }
   
   .medical-staff-button {
@@ -52,19 +104,26 @@
     background-color: var(--secondary-color);
     color: var(--text-color);
   }
-  
-  .medicentral-logo {
-    width: 200px; /* to be adjusted */
-    margin: 2rem auto;
-    display: block;
+
+  .login-welcome {
+    font-size: var(--font-size-medium-mobile);
+    margin-bottom: 0.5rem;
   }
-  
+
+  .choose-user,
   .contact-text {
-    font-size: var(--font-size-x-small);
-    text-align: center;
+    text-align: center; 
   }
-  
-  .arrow {
-    font-size: var(--font-size-small);
+
+  .medical-staff-button,
+  .patient-button {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; 
   }
-  
+}
+
+
+
+

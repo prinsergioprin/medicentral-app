@@ -2,12 +2,10 @@
 
 .dashboard {
   width: 26%;
-  min-width: 16rem;
-  height: 100%;
+  min-width: 16.5rem;
+  min-height: 100%;
   padding: 2rem;
   background-color: var(--base-shadow);
-  position: fixed;
-  top: 5.8rem;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -52,10 +50,18 @@
       gap: 1.5rem;
       font-size: var(--font-size-small);
       font-weight: var(--font-weight-regular);
-      .dashboard-list-item {
+      .dashboard-list-item a {
         display: flex;
         align-items: center;
         gap: 1rem;
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          font-weight: var(--font-weight-semi-bold);
+        }
+        &.active {
+          font-weight: 700;
+        }
       }
     }
     .log-out-btn {
@@ -75,12 +81,14 @@
 }
 
 .dashboard.open {
-  transform: translateX(0);
+  left: 0;
 }
 
 @media (max-width: 834px) {
   .dashboard {
-    transform: translateX(-100%);
+    position: fixed;
+    left: -100%;
+    z-index: 1;
     .dashboard-top {
       .dashboard-close-btn {
         display: inline-block;

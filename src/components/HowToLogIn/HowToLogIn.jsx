@@ -1,8 +1,13 @@
 import React from "react";
+import { Link } from "react-router";
 import "./HowToLogIn.css";
+import LogInSection from "../LogInSection/LogInSection";
+import BankidLogin from "../BankidLogin/BankidLogin";
 
 const HowToLogIn = () => {
   return (
+    <>
+    <BankidLogin/>
     <div className="how-to-login">
       <h3 className="login-heading">How to log in</h3>
       <br />
@@ -16,6 +21,7 @@ const HowToLogIn = () => {
         are finished in logged in mode.
       </p>
     </div>
+    </>
   );
 };
 

@@ -1,0 +1,74 @@
+.bankid-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .bankid-login-container h1 {
+    font-size: var(--font-size-large-mobile);
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  .method-select,
+  .national-id-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .method-select label,
+  .national-id-input label {
+    margin-bottom: 5px;
+    font-size: var(--font-size-small-mobile);
+    background-color: var(--accent-color);
+  }
+  
+  .method-select select {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 12px 15px; /* Adjusted padding */
+      border: none;
+      border-radius: 7px; /* Adjusted border radius */
+      cursor: pointer;
+      font-size: var(--font-size-small-mobile);
+      width: 100%;
+      box-sizing: border-box;
+  }
+  
+  .method-select select option {
+    color: var(--text-color);
+  }
+  
+  .national-id-input input {
+    padding: 12px; /* Adjusted padding */
+    border: 1px solid #ccc;
+    border-radius: 7px; /* Adjusted border radius */
+    font-size: var(--font-size-small-mobile);
+    background-color: var(--secondary-light);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .national-id-input input::placeholder { /* Style the placeholder */
+    color: #999; /* A lighter color for the placeholder text */
+  }
+  
+  .login-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 20px; /* Adjusted padding */
+    border: none;
+    border-radius: 7px; /* Adjusted border radius */
+    cursor: pointer;
+    font-size: var(--font-size-small-mobile);
+    width: 100%;
+    font-weight: var(--font-weight-button); /* Use the button font weight */
+  }
+  
+  .login-button:hover {
+    opacity: 0.8;
+  }
+  

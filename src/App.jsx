@@ -1,21 +1,18 @@
 import "./App.css";
 import { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  // Routes,
-  // Route
-} from "react-router";
-import DashboardComponent from "./Components/DashboardComponent/DashboardComponent";
-import HomePageComponent from "./Components/HomePageComponent/HomePageComponent";
-import MainHeadingComponent from "./Components/MainHeadingComponent/MainHeadingComponent";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router";
 import Navbar from "./Components/Navbar/Navbar";
+import BankidLogin from "./Components/BankidLogin/BankidLogin";
 import LogInSection from "./Components/LogInSection/LogInSection";
+import MethodPage from "./Components/MethodPage/MethodPage";
 import Footer from "./Components/Footer/Footer";
-import PastActivitiesBox from "./Components/PastActivitiesBox/PastActivitiesBox";
-import GoBackButton from "./Components/GoBackButton/GoBackButton";
 import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
 import PatientSearch from "./Components/PatientSearch/PatientSearch";
 import PatientWidgets from "./Components/PatientWidgets/PatientWidgets";
+import HomePageLayout from "./Components/HomePageLayoutComponent/HomePageLayout";
+import PastActivitiesLayout from "./Components/PastActivitiesLayout/PastActivitiesLayout";
+import PatientDatabaseLayout from "./Components/PatientDatabaseLayout/PatientDatabaseLayout";
+import MedicalJournalLayout from "./Components/MedicalJournalLayout/MedicalJournalLayout";
 
 function App() {
   useEffect(() => {
@@ -24,56 +21,46 @@ function App() {
 
   // useState to toggle dashboard using burger icon
   // const [isDashboardOpen, setIsDashboardOpen] = useState(false);
-
   // const toggleDashboard = () => {
   //   setIsDashboardOpen(!isDashboardOpen);
   // };
 
   return (
-    // <Router>
-    <div className="App">
-      <Navbar />
-      {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
+    <Router>
+      <div className="App">
+        {/* make false on first 3 pages... */}
+        <DynamicNavbar />
+        {/* BURGER ICON IN HEADER SHOULD HAVE THIS:
        onToggleDashboard={toggleDashboard} */}
-      <div className="main-content">
-        {/* ROUTE LANDING PAGE */}
-        {/* ROUTE METHOD PAGE */}
-        {/* ROUTE LOGIN PAGE */}
 
-        {/* ROUTE HOMEPAGE */}
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<LogInSection />} />
+            <Route path="/login-method" element={<MethodPage />} />
+            <Route path="/login" element={<HowToLogIn />} />
+            <Route path="/homepage" element={<HomePageLayout />} />
+            <Route
+              path="/patient-database"
+              element={<PatientDatabaseLayout />}
+            />
+            {/* add link inside element*/}
 
-        <DashboardComponent
-        // isOpen={isDashboardOpen} onClose={toggleDashboard}
-        />
-        <div className="right-side">
-          <MainHeadingComponent
-            mainHeading="Hello, Doc"
-            secondaryHeading="What are you looking for today?"
-          />
-          {/* change content on different routes */}
+            <Route path="/patient-page" element={<PatientWidgets />} />
 
-          {/* <Switch>
-              <Route exact path="/" component={HomePageComponent} />
-              <Route path="/patient" component={PatientDatabaseComponent} />
-              {/* Add more routes */}
-          {/* </Switch> */}
-
-          <HomePageComponent />
-          <LogInSection />
-          <GoBackButton />
-          <PastActivitiesBox />
-          <HowToLogIn />
-          <PatientSearch />
-          <PatientWidgets />
-
-          {/* ROUTE PATIENT DATABASE */}
+            <Route path="/past-activities" element={<PastActivitiesLayout />} />
+            <Route path="/medical-journal" element={<MedicalJournalLayout />} />
+          </Routes>
         </div>
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
-    //{/* </Router> */}
+    </Router>
   );
 }
+
+const DynamicNavbar = () => {
+  const location = useLocation();
+  const showNavRight = location.pathname !== "/" && location.pathname !== "/login-method" && location.pathname !== "/login";
+  return <Navbar showNavRight={showNavRight} />;
+};
 
 export default App;

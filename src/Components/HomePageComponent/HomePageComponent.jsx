@@ -14,6 +14,7 @@ const HomePageComponent = () => {
       <HomeCardComponent
         title="Patient database"
         tag={0}
+        linkTo="/patient-database"
         icon={patientIcon}
         paragraph1="Access a patient's medical history, make updates, add visit info, among other tasks."
       />
@@ -37,9 +38,10 @@ faulty equipment"
         Blood test results"
       />
       <HomeCardComponent
-        title="Activity log"
+        title="Past activities"
         icon={activityIcon}
         tag={<span className="dot-icon">{dotIcon}</span>}
+        linkTo="/past-activities"
         paragraph1="Administered flu vaccine"
         paragraph2="Reviewed medical history and symptoms"
       />
