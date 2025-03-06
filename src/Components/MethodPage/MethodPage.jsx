@@ -1,5 +1,6 @@
 import React from 'react';
 import './MethodPage.css';
+import { Link } from 'react-router';
 
 function MethodPage() {
   return (
@@ -7,9 +8,9 @@ function MethodPage() {
        <h1 className="main-heading">Medical staff</h1>
       <p className="choose-method">Choose login method:</p>
       <div className="button-container">
-        <button className="login-button">
+        <Link to="/login" className="login-button">
         <span className="button-arrow">▶</span> BANK ID
-        </button>
+        </Link>
         <button className="login-button">
           <span className="button-arrow">▶</span> HOSPITAL ID
         </button>
