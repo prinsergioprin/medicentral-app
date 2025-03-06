@@ -2,7 +2,9 @@ import "./App.css";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router";
 import Navbar from "./Components/Navbar/Navbar";
+import BankidLogin from "./Components/BankidLogin/BankidLogin";
 import LogInSection from "./Components/LogInSection/LogInSection";
+import MethodPage from "./Components/MethodPage/MethodPage";
 import Footer from "./Components/Footer/Footer";
 import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
 import HomePageLayout from "./Components/HomePageLayoutComponent/HomePageLayout";
@@ -32,7 +34,7 @@ function App() {
         <div className="main-content">
           <Routes>
             <Route path="/" element={<LogInSection />} />
-            {/* <Route path="/login-method" element={<LogInMethod />} /> */}
+            <Route path="/login-method" element={<MethodPage />} />
             <Route path="/login" element={<HowToLogIn />} />
             <Route path="/homepage" element={<HomePageLayout />} />
             <Route

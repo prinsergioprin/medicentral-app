@@ -1,0 +1,67 @@
+.method-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+  padding: 2rem;
+  font-family: "Outfit", serif;
+}
+
+.main-heading {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-semi-bold);
+  margin-bottom: 1.5rem;
+}
+
+.choose-method {
+  font-size: var(--font-size-x-small);
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0.75rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%; /* Make buttons fill the container width */
+  max-width: 300px; /* Optional: set a maximum width for the buttons */
+}
+
+.login-button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  font-family: "Outfit", sans-serif;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-buttton);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start; /* Align text to the left */
+}
+
+.button-arrow {
+  margin-right: 0.5rem;
+  font-size: var(--font-size-small);
+}
+
+.contact-text-method {
+  font-size: var(--font-size-x-small);
+  font-family: "Raleway", sans-serif;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.contact-text-method p {
+  margin: 0; 
+}
+
+  @media (max-width: 834px) {
+    .login-method {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  
