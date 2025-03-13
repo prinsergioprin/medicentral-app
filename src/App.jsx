@@ -1,11 +1,16 @@
 import "./App.css";
 import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router";
 import Navbar from "./Components/Navbar/Navbar";
 import LogInSection from "./Components/LogInSection/LogInSection";
 import MethodPage from "./Components/MethodPage/MethodPage";
 import Footer from "./Components/Footer/Footer";
-import HowToLogIn from "./Components/HowToLogIn/HowToLogIn";
+import HowToLogIn from "./Components/HowToLogInComponent/HowToLogIn";
 import PatientWidgets from "./Components/PatientWidgets/PatientWidgets";
 import HomePageLayout from "./Components/HomePageLayoutComponent/HomePageLayout";
 import PastActivitiesLayout from "./Components/PastActivitiesLayout/PastActivitiesLayout";
@@ -57,7 +62,10 @@ function App() {
 
 const DynamicNavbar = () => {
   const location = useLocation();
-  const showNavRight = location.pathname !== "/" && location.pathname !== "/login-method" && location.pathname !== "/login";
+  const showNavRight =
+    location.pathname !== "/" &&
+    location.pathname !== "/login-method" &&
+    location.pathname !== "/login";
   return <Navbar showNavRight={showNavRight} />;
 };
 
